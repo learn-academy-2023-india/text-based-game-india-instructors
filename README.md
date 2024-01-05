@@ -54,3 +54,34 @@ Each team will give a brief (five minute) presentation of their application. Pre
 - First team member: What was your team's planning process?
 - Second team member: Show us one built in Ruby method your team used and explain what it is doing.
 - Third team member: What did your team get stuck on and how did you overcome this challenge?
+
+## Plan
+- Theme: Pac Man
+- Image of pacman
+  - for text: https://fsymbols.com/generators/carty/
+  - two methods to use ASCII art:
+  1. puts "": copy and paste ASCII onto the ruby file
+  2. save the ASCII in a text file (.txt) and using a method on the ruby file to read/print it
+```rb
+    # method to display ASCII art
+    def display_ascii
+      File.readlines('pac.txt') do |line|
+        line
+      end
+    end
+
+    # method call to display image
+    puts display_ascii
+```
+
+- String interpolation (short hand)
+puts "Current Status for #{player_name}"
+- concatenation (long hand)
+puts "Current Status for " + player_name
+
+- Greeting: Welcome to Pac-Terminal
+- Give options of moving left, right, up, down
+- Give option to leave
+- Give option to see status
+
+- To stop the application during development, Ctrl + C
